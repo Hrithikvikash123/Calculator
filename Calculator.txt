@@ -1,0 +1,39 @@
+package com.company;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int choice,a,b;
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the value of a is: ");
+        a=sc.nextInt();
+        System.out.print("Enter the value of b is:");
+        b=sc.nextInt();
+        System.out.print("Enter the input from user:");
+        choice=sc.nextInt();
+        
+        switch(choice){
+
+            case 1:
+                System.out.println("Addition is : "+(a+b));
+                break;
+
+            case 2:
+                System.out.println("Multiplication is : "+(a*b));
+                break;
+
+            case 3:
+                System.out.println("Division is : "+(a/b));
+                break;
+
+            case 4:
+                System.out.println("Subtraction  is : "+(a-b));
+                break;
+
+            default:
+                System.out.println("Not result found");
+                break;
+        }
+    }
+}
